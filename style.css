@@ -1,0 +1,108 @@
+body {
+	background-color: black;
+}
+
+h1 {
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+	position: relative;
+	background-color: green;
+	height: 200px;
+	width: 400px;
+	margin: auto;
+}
+
+#ball {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-image: url(./football.png);
+	border-radius: 13px;
+	top: 100px;
+	left: 50px;
+
+}
+
+.pass {
+	animation: passing 1.5s linear;
+}
+
+#goal {
+	position: absolute;
+	height: 100px;
+	width: 25px;
+	background-color: white;
+	top: 40px;
+	left: 350px;
+}
+
+#obsticle {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: blue;
+	border-radius: 15px;
+	top: 30px;
+	left: 200px;
+	animation: defenderMovement 3s linear infinite;
+}
+
+#obsticle2 {
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	background-color: blue;
+	border-radius: 15px;
+	top: 30px;
+	left: 250px;
+	animation: defenderMovement2 5s linear infinite;
+}
+
+@keyframes defenderMovement {
+	0% {
+		top: 30px;
+		left: 200px;
+	}
+	50% {
+		top: 150px;
+		left: 200px;
+	}
+	100% {
+		top: 30px;
+		left: 200px;
+	}
+}
+
+@keyframes defenderMovement2 {
+	0% {
+		top: 30px;
+		left: 250px;
+	}
+	50% {
+		top: 150px;
+		left: 250px;
+	}
+	100% {
+		top: 30px;
+		left: 250px;
+	}
+}
+
+@keyframes passing {
+	0% {
+		top: 100px;
+		left: 50px;
+	}
+	50% {
+		top: 100px;
+		left: 200px;
+	}
+	100% {
+		top: 100px;
+		left: 350px;
+	}
+}
