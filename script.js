@@ -21,10 +21,12 @@ let isAlive = setInterval(function () {
 	//Druga kolizija nastaje kad je ballLeft izmedu 220 i 280, a obsticle2Top izmedu 70 i 130
 	if ((ballLeft > 170 && ballLeft < 230) && (obsticleTop > 70 && obsticleTop < 130) || 
 		(ballLeft > 220 && ballLeft < 280) && (obsticle2Top > 70 && obsticle2Top < 130)) {
-		console.log("COLLLISIONNNN!!!")
+		alert("COLLLISIONNNN!!!");
+	};
+	if (ballLeft > 350) {
+		alert("Goal!!!");
 	};
 }, 10);
-
 
 
 document.addEventListener('keydown', pass);

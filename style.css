@@ -37,7 +37,7 @@ h1 {
 	width: 25px;
 	background-color: white;
 	top: 40px;
-	left: 350px;
+	left: 330px;
 }
 
 #obsticle {
@@ -103,6 +103,6 @@ h1 {
 	}
 	100% {
 		top: 100px;
-		left: 350px;
+		left: 370px;
 	}
 }
