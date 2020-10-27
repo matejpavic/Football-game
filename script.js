@@ -1,6 +1,7 @@
 const ball = document.getElementById('ball');
 const obsticle = document.getElementById('obsticle');
 const obsticle2 = document.getElementById('obsticle2');
+const shootButton = document.getElementById('shootButton'); 
 
 const pass = () => {
 	if (ball.classList != 'pass') {
@@ -29,5 +30,4 @@ let isAlive = setInterval(function () {
 }, 10);
 
 
-document.addEventListener('keydown', pass);
-document.addEventListener('click', pass);
+shootButton.addEventListener('click', pass);

@@ -62,6 +62,17 @@ h1 {
 	animation: defenderMovement2 5s linear infinite;
 }
 
+#shootButton {
+	position: absolute;
+	background-color: green;
+	color: white;
+	height: 5%;
+	font-size: 800;
+	width: 15%;
+	top: 40%;
+	left: 42.5%;
+}
+
 @keyframes defenderMovement {
 	0% {
 		top: 30px;
